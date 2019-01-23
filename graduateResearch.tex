@@ -3,7 +3,7 @@
 \usepackage{cite}
 \usepackage[dvipdfmx]{hyperref}
 \usepackage{pxjahyper}
-\usepackage{listings}
+\usepackage{listings}%begin{lstlisting}で使える
 \lstset{
 basicstyle={\small},% 
 identifierstyle={\small},% 
@@ -14,7 +14,7 @@ stringstyle={\small\ttfamily},
 frame={tb}, 
 breaklines=true, 
 columns=[l]{fullflexible},% 
-numbers=left,% 
+numbers=left,%これ消すと行番号消える
 xrightmargin=0zw,% 
 xleftmargin=3zw,% 
 numberstyle={\scriptsize},% 
@@ -23,7 +23,7 @@ numbersep=1zw,%
 morecomment=[l]{//}% 
 }
 
-\title{UPPAALを用いた自動運転車の\\群制御則のモデル化と検証}
+\title{UPPAALを用いた自動運転車の\\群制御アルゴリズムのモデル化と検証}
 \etitle{title}
 \author{佐原優衣}
 \gakusekibangou{1415045}
@@ -48,18 +48,21 @@ morecomment=[l]{//}%
 	\section{目的}
 	自動運転車の群制御アルゴリズムを形式的に記述し，モデル検査を用いて，性質を検証する。
 	\section{論文の構成}
-\chapter{高密度な自動運転車群}
+\chapter{}
 
 	\section{街の規格と車の規格}
 	\section{問題提起}
-	\section{実装論理}
+	\section{モデル検査ツールUPPAAL}
+	本節では文献\cite{a1}からモデル検査ツールUPPAALの概説を行う。
+	\subsection{モデル検査と時間の扱い}
+	モデル検査とは
 \chapter{UPPAALによるモデル化と検証}
 	\section{群制御アルゴリズム}
 	\section{街のモデル化}
 \chapter{考察}
 \chapter{まとめ}
 \acknowledgements
-\begin{thebibliography}{数字}
-	\bibitem{1} 参考文献の名前・著者
+\begin{thebibliography}{1}
+	\bibitem{a1}{長谷川哲夫，田原康之，磯部祥尚，UPPAALによる性能モデル検証ーリアルタイムシステムのモデル化と検証ー，（株）近代科学社，2012.}
 \end{thebibliography}
 \end{document}
