@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {3.1}群制御アルゴリズム}{3}{section.3.1}
 \contentsline {section}{\numberline {3.2}街のモデル化}{3}{section.3.2}
 \contentsline {chapter}{\numberline {第4章}考察}{4}{chapter.4}
-\contentsline {chapter}{\numberline {第5章}まとめ}{5}{chapter.5}
+\contentsline {chapter}{\numberline {第5章}おわりに}{5}{chapter.5}
 \contentsline {chapter}{謝 辞}{6}{chapter*.2}
 \contentsline {chapter}{\numberline {参 考 文 献}}{7}{chapter*.3}
