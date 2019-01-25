@@ -1,19 +1,19 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  24 JAN 2019 00:56
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.9.22)  25 JAN 2019 14:38
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **graduateResearch.tex
 (./graduateResearch.tex
-pLaTeX2e <2018-07-28>+1 (based on LaTeX2e <2018-04-01> patch level 5)
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./tpu-sotu.cls
 Document Class: tpu-sotu 1999/01/06 v1.0 Standard pLaTeX class
 Class tpu-sotu Info: No local configuration file on input line 13.
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jreport.cls
-Document Class: jreport 2018/07/03 v1.8 Standard pLaTeX class
+Document Class: jreport 2018/02/04 v1.7h Standard pLaTeX class
 \c@@paper=\count83
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jsize12.clo
-File: jsize12.clo 2018/07/03 v1.8 Standard pLaTeX file (size option)
+File: jsize12.clo 2018/02/04 v1.7h Standard pLaTeX file (size option)
 )
 \c@part=\count84
 \c@chapter=\count85
@@ -63,7 +63,7 @@ LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -79,7 +79,7 @@ Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -87,7 +87,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
@@ -128,7 +128,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count96
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -137,33 +137,33 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
+Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count98
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5141.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen128
 \Fld@menulength=\count99
 \Field@Width=\dimen129
 \Fld@charsize=\dimen130
-Package hyperref Info: Hyper figures OFF on input line 6396.
-Package hyperref Info: Link nesting OFF on input line 6401.
-Package hyperref Info: Hyper index ON on input line 6404.
-Package hyperref Info: backreferencing OFF on input line 6411.
-Package hyperref Info: Link coloring OFF on input line 6416.
-Package hyperref Info: Link coloring with OCG OFF on input line 6421.
-Package hyperref Info: PDF/A mode OFF on input line 6426.
-LaTeX Info: Redefining \ref on input line 6466.
-LaTeX Info: Redefining \pageref on input line 6470.
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count100
 \c@Item=\count101
 \c@Hfootnote=\count102
@@ -171,7 +171,7 @@ LaTeX Info: Redefining \pageref on input line 6470.
 Package hyperref Info: Driver: hdvipdfm.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hdvipdfm.def
-File: hdvipdfm.def 2018/09/30 v6.88a Hyperref driver for dvipdfm
+File: hdvipdfm.def 2018/02/06 v6.86b Hyperref driver for dvipdfm
 \pdfm@box=\box51
 \c@Hy@AnnotLevel=\count103
 \HyField@AnnotCount=\count104
@@ -186,7 +186,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip43
 )
 (/usr/local/texlive/2018/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
-Package: pxjahyper 2018/07/15 v0.3d
+Package: pxjahyper 2018/01/25 v0.3c
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count107
@@ -203,15 +203,15 @@ Package: pxjahyper 2018/07/15 v0.3d
 \lst@maxwidth=\dimen134
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count113
 \lst@skipnumbers=\count114
 \lst@framebox=\box53
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2018/09/02 1.7 listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (./graduateResearch.aux)
 \openout1 = `graduateResearch.aux'.
@@ -302,6 +302,10 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 
 ]
 第 3 章
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 60.
+
 [3
 
 ]
@@ -315,25 +319,25 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 ] [6
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
  [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
  (./graduateResearch.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `graduateResearch.out' has not changed.
 (rerunfilecheck)             Checksum: 527536CAF4F6F2F25DEA5FC5F2904D9D;1057.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 6235 strings out of 493248
- 90386 string characters out of 6144401
- 183213 words of memory out of 5000000
- 10185 multiletter control sequences out of 15000+600000
+ 6188 strings out of 493281
+ 89758 string characters out of 6145041
+ 182231 words of memory out of 5000000
+ 10108 multiletter control sequences out of 15000+600000
  16555 words of font info for 65 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 28i,8n,32p,278b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,32p,298b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on graduateResearch.dvi (9 pages, 12400 bytes).
+Output written on graduateResearch.dvi (9 pages, 12984 bytes).

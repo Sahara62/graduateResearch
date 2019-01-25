@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.2}問題提起}{2}{section.2.2}
 \contentsline {section}{\numberline {2.3}モデル検査ツールUPPAAL}{2}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}モデル検査と時間の扱い}{2}{subsection.2.3.1}
-\contentsline {chapter}{\numberline {第3章}UPPAALによるモデル化と検証}{3}{chapter.3}
+\contentsline {chapter}{\numberline {第3章}UPPAALによる\\モデル化と検証}{3}{chapter.3}
 \contentsline {section}{\numberline {3.1}群制御アルゴリズム}{3}{section.3.1}
 \contentsline {section}{\numberline {3.2}街のモデル化}{3}{section.3.2}
 \contentsline {chapter}{\numberline {第4章}考察}{4}{chapter.4}
