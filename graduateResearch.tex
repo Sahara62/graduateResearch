@@ -2,6 +2,7 @@
 \usepackage{ascmac}
 \usepackage{cite}
 \usepackage[dvipdfmx]{hyperref}
+\usepackage[dvipdfmx]{graphicx}
 \usepackage{pxjahyper}
 \usepackage{listings}%begin{lstlisting}で使える
 \lstset{
@@ -53,9 +54,24 @@ morecomment=[l]{//}%
 本章では文献\cite{a1}からモデル検査とUPPAALの概説を行う。
 	\section{モデル検査と時間の扱い}
 	モデル検査は，システム上で起こり得る状態を網羅的に調べることにより設計の誤りを発見する自動検証手法の一種である。モデル検査手法は，システムの振る舞いの設計，および検証したい性質をそれぞれモデル化し，ツールを用いて，システムが性質を満たしているかを調べる。
+	
+	モデル検査において，システムの動作を表現するシステムモデルを作成する必要がある。ソフトウェア開発のどの段階でモデル検査を活用したいか，もしくは，何をどの程度検証したいかによって，どのような情報をもとにどのようにシステムモデルを作成するかが変わってくる。専用のシステムモデルを入力とするモデル検査を設計モデル検査，ソースプログラムを入力とするモデル検査をプログラムモデル検査と呼ぶ。これらのモデル検査がソフトウェア開発の流れの中での活用例を図\ref{develP}に示す。図\ref{develP}にソフトウェアの品質向上のために行われる手順も挙げた。設計モデル検査は設計レビューを，プログラムモデル検査はコードレビューをそれぞれ補完する位置付けである。
+	
+	次に，時間が扱える設計モデル検査の利点について述べる。
+	イベントの発生時刻や処理時間，これらの時間的なズレの三点について任意に設定できるため，時間が扱えないモデル検査と違い，応答時間などの時間制約を検証対象にすることが可能である。また，イベントの発生と特定の処理の開始を簡単に記述できる。
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=100mm]{developmentProcess.png}
+	\caption{ソフトウェア開発プロセス}
+	\label{develP}
+	\end{figure}
+
+	\section{モデル検査ツールUPPAAL}
+	本研究では前節で述べた利点から時間を扱えるUPPAALを採用する。本節は，UPPAALについて概説する。
+	
 \chapter{群制御アルゴリズムの\\モデル化と検証}
-	\section{群制御アルゴリズム}
-	\section{街のモデル化}
+	\section{モデル化}
+	\section{検証}
 \chapter{考察}
 \chapter{おわりに}
 \acknowledgements
