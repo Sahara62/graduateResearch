@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  30 JAN 2019 17:19
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  30 JAN 2019 23:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,13 +320,18 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 第 2 章
 File: developmentProcess.png Graphic file (type bmp)
 <developmentProcess.png>
+
+Overfull \hbox (37.24408pt too wide) in paragraph at lines 64--65
+ [][] 
+ []
+
 [2
 
 ] [3]
 第 3 章
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 72.
+(hyperref)                removing `\\' on input line 77.
 
 [4
 
@@ -341,25 +346,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [7
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
  [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./graduateResearch.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `graduateResearch.out' has not changed.
 (rerunfilecheck)             Checksum: D95FBC80AC721960E476D94C5652708A;905.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
  6583 strings out of 493248
  95056 string characters out of 6144401
- 189001 words of memory out of 5000000
+ 190001 words of memory out of 5000000
  10513 multiletter control sequences out of 15000+600000
  16555 words of font info for 65 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  28i,8n,32p,673b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on graduateResearch.dvi (10 pages, 14828 bytes).
+Output written on graduateResearch.dvi (10 pages, 16876 bytes).
