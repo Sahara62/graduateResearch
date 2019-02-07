@@ -6,6 +6,7 @@
 \usepackage{pxjahyper}
 \usepackage{listings}%begin{lstlisting}で使える
 \lstset{
+language=XML,%
 basicstyle={\small},% 
 identifierstyle={\small},% 
 commentstyle={\small\ttfamily \color[rgb]{0,0,0}},% 
@@ -13,7 +14,7 @@ keywordstyle={\small\bfseries \color[rgb]{0,0,1}},%
 ndkeywordstyle={\small},% 
 stringstyle={\small\ttfamily}, 
 frame={tb}, 
-breaklines=true, 
+breaklines=true,
 columns=[l]{fullflexible},% 
 numbers=left,%これ消すと行番号消える
 xrightmargin=0zw,% 
@@ -43,13 +44,29 @@ morecomment=[l]{//}%
 
 \chapter{はじめに}
 	\section{背景}
-	移動手段として自動車はよく使われる。自動車の交通整備の方法として信号機が広く採用されている。しかし，交通量が少ない場所では信号機は導入されていないこともある。人が運転する場合は周囲に他車がいないこと，歩行者などがいないことを確認して通過する。では，自動運転車の場合を考える。
-		\subsection{問題提起}
-		街の中で多数の自動運転車が他車を考慮しない経路選択をすると問題が発生する恐れがある。そのためには個々による車の制御だけでなく群制御アルゴリズムを導入する必要があるだろう
+	自動運転技術は発達し続けている。自動運転は，搭載される技術によってレベル1からレベル5までに分けられており，現在，日本国内では，運転者支援を主としたレベル2までが市販車に採用されている。今後，高速道路や，限定地域での特定条件下での完全自動運転を行うレベル4の車両の普及が目指されている。
+	
+	完全自動運転の普及の環境の一例として，アラブ首長国連邦において再生可能エネルギーを利用し，二酸化炭素を排出しないゼロカーボンを目指すマスダールシティプロジェクトが2006年に始まった。このプロジェクトでは道路交通は自動運転車のみで構成される予定である。住民が任意の時刻に自動運転車に乗降し都市空間内を移動することを想定しているため，大量の車両の配備が必要となる。道路上の車両密度が高くなるため，渋滞やデッドロックが発生することが想定される。したがって，個々の車両だけではなく，自動運転車群が効率的に走行するアルゴリズムが必要となる。
+	
+	しかし，効率的に制御された自動運転車が安全かどうかアルゴリズムから一目では判断しきれない。そこで本研究では群制御アルゴリズムが欲しい性質を持っているかどうかを検証する手法を提案する。
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm]{Masdar.jpg}
+	\caption{マスダール・シティの完成イメージ \protect \footnotemark}
+	\label{Masdar}
+	\end{figure}
+	\newpage
+	\footnotetext{出典：Masdar社}
 	\section{目的}
 	自動運転車の群制御アルゴリズムを形式的に記述し，モデル検査を用いて，性質を検証する。
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=150mm]{ModelVerification.png}
+	\caption{モデル検査とは}
+	\label{ModelV}
+	\end{figure}
 	\section{論文の構成}
-	本論文では，
+	本論文は，2章で本研究で用いるモデル検査の概説と使用するモデル検査ツールの概説，3章で単一の交差点における車両のモデル化と検証，4章で検証にかかる時間や検証の質，5章でまとめを述べるといった構成である。
 \chapter{モデル検査}
 本章では文献\cite{a1}からモデル検査とUPPAALの概説を行う。
 	\section{モデル検査}
@@ -94,17 +111,108 @@ morecomment=[l]{//}%
 	\caption{システムモデルの入力部分}
 	\label{CC}
 	\end{figure}
-	
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{GlobalDec.png}
+	\caption{大域情報編集ペイン}
+	\label{GD}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{LocalDec.png}
+	\caption{局所的情報編集ペイン}
+	\label{LD}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{SystemDec.png}
+	\caption{システム定義編集ペイン}
+	\label{SysD}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=160mm]{ExmpleSimulationResult.png}
+	\caption{シミュレーション機能}
+	\label{ESR}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{showModelVerification.png}
+	\caption{モデル検査機能}
+	\label{sMV}
+	\end{figure}
 	シミュレーションと検証：
 	
 	時間表現：
 	
 \chapter{群制御アルゴリズムの\\モデル化と検証}
-	\section{モデル化}
-	\section{検証}
+	\section{他車の動作を視野に入れた交差点の通過モデル}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=160mm]{IntersectionBig.png}
+	\caption{他車の行動を視野に入れた交差点のモデル}
+	\label{IB}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar1.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを1台の車が動作した時の検証結果}
+	\label{IBC1}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar2.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを2台の車が動作した時の検証結果}
+	\label{IBC2}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar3.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを3台の車が動作した時の検証結果}
+	\label{IBC3}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar4.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを4台の車が動作した時の検証結果}
+	\label{IBC4}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar5.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを5台の車が動作した時の検証結果}
+	\label{IBC5}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=110mm]{InterBigCar6.png}
+	\caption{他車の行動を視野に入れた交差点のモデルを6台の車が動作した時の検証結果}
+	\label{IBC6}
+	\end{figure}
+	\newpage
+	\section{交差点の使用権を獲得するモデル}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{SimpleIntersection.png}
+	\caption{交差点の進入時に使用権を獲得するモデル}
+	\label{SI}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm]{onTheWayofLock.png}
+	\caption{交差点の進入権}
+	\label{oTWoL}
+	\end{figure}
 \chapter{考察}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=120mm]{IntersectionVerificationTime.png}
+	\caption{車両の台数と検証にかかる時間の関係}
+	\label{IVT}
+	\end{figure}
 \chapter{おわりに}
 \acknowledgements
+
 \begin{thebibliography}{1}
 	\bibitem{a1}{長谷川哲夫，田原康之，磯部祥尚，UPPAALによる性能モデル検証ーリアルタイムシステムのモデル化と検証ー，（株）近代科学社，2012}
 \end{thebibliography}
