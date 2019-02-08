@@ -148,52 +148,32 @@ morecomment=[l]{//}%
 	
 	時間表現：
 	
-\chapter{群制御アルゴリズムの\\モデル化と検証}
-	\section{他車の動作を視野に入れた交差点の通過モデル}
+\chapter{群制御アルゴリズムのモデル化と検証}
+	\section{進行方向を固定しない交差点}
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=160mm]{IntersectionBig.png}
-	\caption{他車の行動を視野に入れた交差点のモデル}
+	\caption{進行方向を固定しない交差点のモデル}
 	\label{IB}
 	\end{figure}
 	\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=110mm]{InterBigCar1.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを1台の車が動作した時の検証結果}
-	\label{IBC1}
+	\includegraphics[width=120mm]{IntersectionVerificationTime.png}
+	\caption{車両の台数と検証にかかる時間の関係}
+	\label{IVT}
 	\end{figure}
-	\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=110mm]{InterBigCar2.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを2台の車が動作した時の検証結果}
-	\label{IBC2}
-	\end{figure}
-	\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=110mm]{InterBigCar3.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを3台の車が動作した時の検証結果}
-	\label{IBC3}
-	\end{figure}
-	\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=110mm]{InterBigCar4.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを4台の車が動作した時の検証結果}
-	\label{IBC4}
-	\end{figure}
-	\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=110mm]{InterBigCar5.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを5台の車が動作した時の検証結果}
-	\label{IBC5}
-	\end{figure}
+%---下に仮置きしておく---
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=110mm]{InterBigCar6.png}
-	\caption{他車の行動を視野に入れた交差点のモデルを6台の車が動作した時の検証結果}
+	\caption{進行方向を固定しない交差点のモデルにおける6台の車両の検証結果}
 	\label{IBC6}
 	\end{figure}
 	\newpage
-	\section{交差点の使用権を獲得するモデル}
+	\section{進行方向を固定する交差点}
+	\subsection{垂直に交差点に進入する2車両のモデル化と検証}
+	\subsection{オートマトンの合成による東西南北それぞれから交差点に直進するモデル}
+	
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=140mm]{SimpleIntersection.png}
@@ -206,13 +186,10 @@ morecomment=[l]{//}%
 	\caption{交差点の進入権}
 	\label{oTWoL}
 	\end{figure}
+	\subsection{オートマトンの合成による東西南北それぞれから直進，右左折するモデル}
+	\section{交差点の通過にかかる最小時間の検証}
 \chapter{考察}
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=120mm]{IntersectionVerificationTime.png}
-	\caption{車両の台数と検証にかかる時間の関係}
-	\label{IVT}
-	\end{figure}
+
 \chapter{おわりに}
 \acknowledgements
 
@@ -220,3 +197,35 @@ morecomment=[l]{//}%
 	\bibitem{a1}{長谷川哲夫,田原康之,磯部祥尚, UPPAALによる性能モデル検証ーリアルタイムシステムのモデル化と検証ー, 近代科学社, 2012.}
 \end{thebibliography}
 \end{document}
+%%%%%%%仮置場%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=110mm]{InterBigCar1.png}
+%	\caption{他車の行動を視野に入れた交差点のモデルを1台の車が動作した時の検証結果}
+%	\label{IBC1}
+%	\end{figure}
+%	\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=110mm]{InterBigCar2.png}
+%	\caption{他車の行動を視野に入れた交差点のモデルを2台の車が動作した時の検証結果}
+%	\label{IBC2}
+%	\end{figure}
+%	\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=110mm]{InterBigCar3.png}
+%	\caption{他車の行動を視野に入れた交差点のモデルを3台の車が動作した時の検証結果}
+%	\label{IBC3}
+%	\end{figure}
+%	\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=110mm]{InterBigCar4.png}
+%	\caption{他車の行動を視野に入れた交差点のモデルを4台の車が動作した時の検証結果}
+%	\label{IBC4}
+%	\end{figure}
+%	\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=110mm]{InterBigCar5.png}
+%	\caption{他車の行動を視野に入れた交差点のモデルを5台の車が動作した時の検証結果}
+%	\label{IBC5}
+%	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

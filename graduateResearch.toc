@@ -7,9 +7,13 @@
 \contentsline {subsection}{\numberline {2.1.1}様々なモデル検査ツール}{4}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}モデル検査ツールUPPAAL}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}UPPAALの操作}{6}{subsection.2.2.1}
-\contentsline {chapter}{\numberline {第3章}群制御アルゴリズムの\\モデル化と検証}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}他車の動作を視野に入れた交差点の通過モデル}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}交差点の使用権を獲得するモデル}{12}{section.3.2}
+\contentsline {chapter}{\numberline {第3章}群制御アルゴリズムのモデル化と検証}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}進行方向を固定しない交差点}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}進行方向を固定する交差点}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}垂直に交差点に進入する2車両のモデル化と検証}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}オートマトンの合成による東西南北それぞれから交差点に直進するモデル}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}オートマトンの合成による東西南北それぞれから直進，右左折するモデル}{12}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}交差点の通過にかかる最小時間の検証}{12}{section.3.3}
 \contentsline {chapter}{\numberline {第4章}考察}{14}{chapter.4}
 \contentsline {chapter}{\numberline {第5章}おわりに}{15}{chapter.5}
 \contentsline {chapter}{謝 辞}{16}{chapter*.2}
