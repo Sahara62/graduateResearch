@@ -27,10 +27,10 @@ morecomment=[l]{//}%
 }
 
 \title{UPPAALを用いた自動運転車の\\群制御アルゴリズムのモデル化と検証}
-\etitle{Modeling and verification \\of autonomous-vehicle group control algorithms \\using UPPAAL}
+\etitle{Modeling and verification \\of autonomous-vehicle group control algorithms using UPPAAL}
 \author{佐原 優衣}
 \gakusekibangou{1515024}
-\date{2019年2月}
+\date{平成31年（2019年）2月}
 \professor{中村 正樹 准教授}
 \department{電子・情報工学科}
 %- - - - - - - - - - - - - - - - - - - - - - - - -
@@ -149,6 +149,7 @@ morecomment=[l]{//}%
 	時間表現：
 	
 \chapter{群制御アルゴリズムのモデル化と検証}
+UPPAALを用いて交差点を通過する1台の自動運転車の挙動をモデル化する。車両
 	\section{進行方向を固定しない交差点}
 	\begin{figure}[htbp]
 	\centering
@@ -170,23 +171,61 @@ morecomment=[l]{//}%
 	\label{IBC6}
 	\end{figure}
 	\newpage
+	
 	\section{進行方向を固定する交差点}
+	本節では，交差点に進入する車両の進行方向を固定して，時間オートマトンを作成する。車両1台の挙動は，交差点進入前，交差点通過中，交差点通過後の3つの状態で記述する。交差点進入前に交差点の使用権を取得し，通過後に使用権を解放する。遷移可能条件と状態不変条件に時間に関する条件を与えることによって，通過にかかる時間や使用権を何秒前に取得しなければならないかを記述できる。
 	\subsection{垂直に交差点に進入する2車両のモデル化と検証}
-	\subsection{オートマトンの合成による東西南北それぞれから交差点に直進するモデル}
 	
 	\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=140mm]{SimpleIntersection.png}
-	\caption{交差点の進入時に使用権を獲得するモデル}
-	\label{SI}
+	\includegraphics[width=130mm]{Perpendicular.png}
+	\caption{垂直に交差点に進入する車両1台の時間オートマトン}
+	\label{Perpendicular}
 	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm]{PerpendicularSimu.png}
+	\caption{垂直に交差点に進入する車両の時間オートマトンの合成}
+	\label{PerpendicularS}
+	\end{figure}
+	\newpage
+	
+	\subsection{オートマトンの合成による東西南北それぞれから交差点に直進するモデル}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm]{news.png}
+	\caption{交差点に直進して進入する車両1台の時間オートマトン}
+	\label{news}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=130mm]{newsSimu.png}
+	\caption{交差点に直進して進入する車両の時間オートマトンの合成}
+	\label{newsS}
+	\end{figure}
+	
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=130mm]{onTheWayofLock.png}
 	\caption{交差点の進入権}
 	\label{oTWoL}
 	\end{figure}
+	\newpage
+	
 	\subsection{オートマトンの合成による東西南北それぞれから直進，右左折するモデル}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{SimpleIntersection.png}
+	\caption{車両1台の交差点通過時間オートマトン}
+	\label{Simple}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{SimpleIntersectionSimu.png}
+	\caption{交差点を通過する車両の時間オートマトンの合成}
+	\label{SimpleS}
+	\end{figure}
+	\newpage
 	\section{交差点の通過にかかる最小時間の検証}
 \chapter{考察}
 
