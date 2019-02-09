@@ -163,7 +163,7 @@ UPPAALを用いて交差点を通過する1台の自動運転車の挙動をモ�
 	\caption{車両の台数と検証にかかる時間の関係}
 	\label{IVT}
 	\end{figure}
-%---下に仮置きしておく---
+
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=110mm]{InterBigCar6.png}
@@ -174,23 +174,28 @@ UPPAALを用いて交差点を通過する1台の自動運転車の挙動をモ�
 	
 	\section{進行方向を固定する交差点}
 	本節では，交差点に進入する車両の進行方向を固定して，時間オートマトンを作成する。車両1台の挙動は，交差点進入前，交差点通過中，交差点通過後の3つの状態で記述する。交差点進入前に交差点の使用権を取得し，通過後に使用権を解放する。遷移可能条件と状態不変条件に時間に関する条件を与えることによって，通過にかかる時間や使用権を何秒前に取得しなければならないかを記述できる。
-	\subsection{垂直に交差点に進入する2車両のモデル化と検証}
-	
+	\subsection{垂直に交差点に進入する2車両のモデル}
+	交差点に直進する車両2台の進行方向が互いに交差するとき，衝突回避するためには交差点に同時に進入するのは1台までにする。交差点進入時に使用権を取得する車両の時間オートマトンを作成する(図\ref{Perpendicular})。respawnは車両の初期状態かつ，任意の時刻に車両が発生する状態である。BeforeEnterは車両の交差点進入前の状態である。crossEreaは交差点通過中の状態である。Passedは交差点通過後の状態である。respawnからBeforeEnterへの遷移可能条件のcross==0は交差点の使用権が未獲得であることを示しており，遷移時にcross==1と更新して交差点使用権を獲得する。同時にタイマーであるlocal\_clockを0にして，BeforeEnterの時間を測定する。BeforeEnterからcrossEreaの遷移でも同様にし，交差点手前の約5秒から10秒前までに使用権を獲得し，交差点通過に2秒から5秒弱かかるということ記述した。
 	\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=130mm]{Perpendicular.png}
-	\caption{垂直に交差点に進入する車両1台の時間オートマトン}
+	\includegraphics[width=125mm]{Perpendicular.png}
+	\caption{交差点進入時に使用権を取得する車両1台の時間オートマトン}
 	\label{Perpendicular}
 	\end{figure}
+	
+	図\ref{PerpendicularS}は時間オートマトン表現で進行方向が垂直に交わる2台の車両の現在状態である。便宜的に左のプロセスverticalを南北方向に直進してるとし，右のプロセスhorizonを東西方向に直進しているとする。現在状態はverticalが交差点の使用権を獲得し，進入前状態で，horizonが交差点通過後の状態である。
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=130mm]{PerpendicularSimu.png}
 	\caption{垂直に交差点に進入する車両の時間オートマトンの合成}
 	\label{PerpendicularS}
 	\end{figure}
+	
+	このモデルでデッドロック検証を行うと0.01秒未満の時間で検証できた。
 	\newpage
 	
 	\subsection{オートマトンの合成による東西南北それぞれから交差点に直進するモデル}
+	
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=130mm]{news.png}
@@ -230,41 +235,10 @@ UPPAALを用いて交差点を通過する1台の自動運転車の挙動をモ�
 \chapter{考察}
 
 \chapter{おわりに}
+本研究では，UPPAALを用いた自動運転車群制御アルゴリズムのモデル化と検証の手法を提案した。単一の交差点においては車両の挙動をモデル化し，デッドロックや通過時間を検証することができた。複数の交差点から構成される都市空間のモデルを作成し検証することが今後の課題である。
 \acknowledgements
-
+本研究を進める上で，多くのご助言とご指摘をいただきました中村准教授，榊原准教授に心より感謝の意を表します。また，多くの助言と協力をいただきました中村研究室，榊原研究室の皆様にも深く感謝いたします。
 \begin{thebibliography}{1}
 	\bibitem{a1}{長谷川哲夫,田原康之,磯部祥尚, UPPAALによる性能モデル検証ーリアルタイムシステムのモデル化と検証ー, 近代科学社, 2012.}
 \end{thebibliography}
 \end{document}
-%%%%%%%仮置場%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=110mm]{InterBigCar1.png}
-%	\caption{他車の行動を視野に入れた交差点のモデルを1台の車が動作した時の検証結果}
-%	\label{IBC1}
-%	\end{figure}
-%	\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=110mm]{InterBigCar2.png}
-%	\caption{他車の行動を視野に入れた交差点のモデルを2台の車が動作した時の検証結果}
-%	\label{IBC2}
-%	\end{figure}
-%	\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=110mm]{InterBigCar3.png}
-%	\caption{他車の行動を視野に入れた交差点のモデルを3台の車が動作した時の検証結果}
-%	\label{IBC3}
-%	\end{figure}
-%	\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=110mm]{InterBigCar4.png}
-%	\caption{他車の行動を視野に入れた交差点のモデルを4台の車が動作した時の検証結果}
-%	\label{IBC4}
-%	\end{figure}
-%	\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=110mm]{InterBigCar5.png}
-%	\caption{他車の行動を視野に入れた交差点のモデルを5台の車が動作した時の検証結果}
-%	\label{IBC5}
-%	\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
