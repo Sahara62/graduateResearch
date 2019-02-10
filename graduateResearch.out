@@ -9,11 +9,11 @@
 \BOOKMARK [1][-]{section.2.2}{モデル検査ツールUPPAAL}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.2.1}{UPPAALの操作}{section.2.2}% 9
 \BOOKMARK [0][-]{chapter.3}{群制御アルゴリズムのモデル化と検証}{}% 10
-\BOOKMARK [1][-]{section.3.1}{進行方向を固定しない交差点}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{進行方向を固定する交差点}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.1}{時間制約のない進行方向を固定しない交差点}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{時間制約を用いる進行方向を固定する交差点}{chapter.3}% 12
 \BOOKMARK [2][-]{subsection.3.2.1}{垂直に交差点に進入する2車両のモデル}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.2}{オートマトンの合成による東西南北それぞれから交差点に直進するモデル}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.3}{オートマトンの合成による東西南北それぞれから直進，右左折するモデル}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{東西南北それぞれから交差点に直進する時間オートマトン}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.3}{交差点を直進・左折・右折する車両の時間オートマトン}{section.3.2}% 15
 \BOOKMARK [1][-]{section.3.3}{交差点の通過にかかる最小時間の検証}{chapter.3}% 16
 \BOOKMARK [0][-]{chapter.4}{考察}{}% 17
 \BOOKMARK [0][-]{chapter.5}{おわりに}{}% 18

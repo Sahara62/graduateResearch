@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  9 FEB 2019 20:06
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  10 FEB 2019 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -801,7 +801,7 @@ File: showModelVerification.png Graphic file (type bmp)
 File: IntersectionBig.png Graphic file (type bmp)
 <IntersectionBig.png>
 
-Overfull \hbox (37.24408pt too wide) in paragraph at lines 156--157
+Overfull \hbox (23.01772pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
@@ -817,47 +817,55 @@ File: Perpendicular.png Graphic file (type bmp)
 File: PerpendicularSimu.png Graphic file (type bmp)
 <PerpendicularSimu.png>
  [12] [13]
+File: onTheWayofLock.png Graphic file (type bmp)
+<onTheWayofLock.png>
 File: news.png Graphic file (type bmp)
 <news.png>
 File: newsSimu.png Graphic file (type bmp)
 <newsSimu.png>
-File: onTheWayofLock.png Graphic file (type bmp)
-<onTheWayofLock.png>
  [14] [15]
 File: SimpleIntersection.png Graphic file (type bmp)
 <SimpleIntersection.png>
 File: SimpleIntersectionSimu.png Graphic file (type bmp)
 <SimpleIntersectionSimu.png>
- [16] [17]
+
+Overfull \hbox (8.79134pt too wide) in paragraph at lines 236--237
+ [][] 
+ []
+
+[16] [17]
+File: minTime.png Graphic file (type bmp)
+<minTime.png>
+ [18] [19]
 第 4 章
-[18
+[20
 
 ]
 第 5 章
-[19
+[21
 
-] [20
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
- [21
+] [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+ [23
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
  (./graduateResearch.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `graduateResearch.out' has not changed.
-(rerunfilecheck)             Checksum: B3A94E32C1FB9224AE3185BFAEAD9C61;1544.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+(rerunfilecheck)             Checksum: BDF05A3098A0268610598D1AAAB35941;1544.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 18167 strings out of 493248
- 342145 string characters out of 6144401
+ 18172 strings out of 493248
+ 342231 string characters out of 6144401
  582706 words of memory out of 5000000
- 21996 multiletter control sequences out of 15000+600000
+ 21999 multiletter control sequences out of 15000+600000
  548452 words of font info for 89 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 32i,9n,49p,790b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,9n,49p,868b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on graduateResearch.dvi (23 pages, 37768 bytes).
+Output written on graduateResearch.dvi (25 pages, 45740 bytes).
