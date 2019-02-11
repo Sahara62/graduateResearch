@@ -9,11 +9,11 @@
 \contentsline {subsection}{\numberline {2.2.1}UPPAALの操作}{5}{subsection.2.2.1}
 \contentsline {chapter}{\numberline {第3章}群制御アルゴリズムのモデル化と検証}{10}{chapter.3}
 \contentsline {section}{\numberline {3.1}時間制約のない進行方向を固定しない交差点}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}時間制約を用いる進行方向を固定する交差点}{10}{section.3.2}
+\contentsline {section}{\numberline {3.2}時間制約を用いる進行方向を固定する交差点}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}垂直に交差点に進入する2車両のモデル}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}東西南北それぞれから交差点に直進する時間オートマトン}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}交差点を直進・左折・右折する車両の時間オートマトン}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}東西南北それぞれから交差点に直進する時間オートマトン}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}交差点を直進・左折・右折する車両の時間オートマトン}{16}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}交差点の通過にかかる最小時間の検証}{16}{section.3.3}
-\contentsline {chapter}{\numberline {第4章}おわりに}{18}{chapter.4}
-\contentsline {chapter}{謝 辞}{19}{chapter*.2}
-\contentsline {chapter}{\numberline {参 考 文 献}}{20}{chapter*.3}
+\contentsline {chapter}{\numberline {第4章}おわりに}{19}{chapter.4}
+\contentsline {chapter}{謝 辞}{20}{chapter*.2}
+\contentsline {chapter}{\numberline {参 考 文 献}}{21}{chapter*.3}
