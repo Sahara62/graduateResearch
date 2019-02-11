@@ -205,6 +205,12 @@ morecomment=[l]{//}%
 	交差点に直進する車両2台の進行方向が互いに交差するとき，衝突回避するためには交差点に同時に進入するのは1台までにする。交差点進入時に使用権を取得する車両の時間オートマトンを作成する(図\ref{Perpendicular})。respawnは車両の初期状態かつ，任意の時刻に車両が発生する状態である。BeforeEnterは車両の交差点進入前の状態である。crossAreaは交差点通過中の状態である。Passedは交差点通過後の状態である。respawnからBeforeEnterへの遷移可能条件のcross==0は交差点の使用権が未獲得であることを示しており，遷移時にcross==1と更新して交差点使用権を獲得する。同時にタイマーであるlocal\_clockを0にして，BeforeEnterの時間を測定する。BeforeEnterからcrossAreaの遷移でも同様にし，交差点手前の約5秒から10秒前までに使用権を獲得し，交差点通過に2秒から5秒弱かかるということ記述した。
 	\begin{figure}[htbp]
 	\centering
+	\includegraphics[width=80mm]{SimplePerpendicular.png}
+	\caption{交差点の使用権}
+	\label{SimpleP}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
 	\includegraphics[width=125mm]{Perpendicular.png}
 	\caption{交差点進入時に使用権を取得する車両1台の時間オートマトン}
 	\label{Perpendicular}
@@ -249,7 +255,18 @@ morecomment=[l]{//}%
 	
 	\subsection{交差点を直進・左折・右折する車両の時間オートマトン}
 	交差点を直進する車両と左折する車両と右折する車両を考慮した時間オートマトンを作成する(図\ref{Simple})。前述までとは違い，右折する場合もあるため，4つの鍵の組み合わせでは右折する車両同士での衝突が起こる可能性がある。したがって前述の4つの鍵に加えて，右折用の鍵crossを用意する。鍵crossは3つ目のパラメータuseの値と照らし合わせる。パラメータuseは右折用の鍵を使用するかどうかを車両の固定情報として保持している。初期状態respawnから交差点進入前状態BeforeEnterへの遷移可能条件をパラメータL1，L2，右折用鍵crossが取得可能であることとした。また，左折時は，パラメータは2つあるが，取得する鍵は1つである。そのため，南から東へ右折する車両と，東から南へ左折する車両と，西から北へ左折する車両の3台が同時に交差点に進入可能となっている。本オートマトンでは，右折や左折が直進より時間がかかることとし，時間に関する条件は前述までのモデルより長くした。
-	
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=100mm]{wn-se.png}
+	\caption{使用権の取得例：右折と左折}
+	\label{RL}
+	\end{figure}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=100mm]{leftcouse.png}
+	\caption{使用権の取得例：左折}
+	\label{4L}
+	\end{figure}
 	北から南へ直進する車両をsn，南から北へ直進する車両をns，東から西へ直進する車両をew，西から東へ直進する車両をwe，北から東へ左折する車両をne，南から西へ左折する車両をsw，東から南へ左折する車両をes，西から北へ左折する車両をwn，北から西へ右折する車両をsw，南から東へ右折する車両をse，東から北へ右折する車両をen，西から南へ右折する車両をwsとすると，上記の3台の車両が交差点に進入する例が図\ref{SimpleS}のように，右折するseが通過中状態crossAreaの時，左折するesも状態crossAreaで，もう一つのwnが状態BeforeEnterとなっている。
 	\begin{figure}[htbp]
 	\centering
