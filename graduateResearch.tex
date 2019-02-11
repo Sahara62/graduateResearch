@@ -226,10 +226,12 @@ morecomment=[l]{//}%
 	\label{IBST}
 	\end{figure}
 	\subsection{モデル検査}
-	UPPAALでは，どれだけ時間が経過しても，いずれのプロセスも遷移できないことをデッドロックという。本モデルでデッドロックが起きないか検証する。本例題におけるデッドロックは同じ鍵を同時に使うことや，Startに戻ってこれないことを指す。
+	UPPAALでは，どれだけ時間が経過しても，いずれのプロセスも遷移できないことをデッドロックという。本モデルでデッドロックが起きないか検証する。本例題におけるデッドロックは同じ鍵を同時に使うことや，Startに戻ってこれないことを指す。検証結果は図\ref{IBC6}のように示される。
 	\[
 	\mbox{\tt{A[] not deadlock}}
 	\]
+	
+	プロセスの車両インスタンスを1から6まで1ずつ増やしながらデッドロック検証を行った。表\ref{a}は車両の台数に対する検証にかかった時間である。図\ref{IVT}はそれをグラフ化したものである。
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=120mm]{IntersectionVerificationTime.png}
@@ -239,6 +241,7 @@ morecomment=[l]{//}%
 	\begin{table}[htb]
 	\centering
 	\caption{車両の台数とデッドロック検証にかかる時間}
+	\label{a}
 	 \begin{tabular}{|c|r|} \hline
 	    車両の台数 & 検証時間(s)  \\ \hline
 	   1& 0.00  \\ \hline
@@ -254,7 +257,7 @@ morecomment=[l]{//}%
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=110mm]{InterBigCar6.png}
-	\caption{進行方向を固定しない交差点のモデルにおける6台の車両の検証結果}
+	\caption{進行方向を固定しない交差点のデッドロック検証結果}
 	\label{IBC6}
 	\end{figure}
 
