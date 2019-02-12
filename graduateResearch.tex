@@ -388,21 +388,21 @@ morecomment=[l]{//}%
 	\section{交差点の通過にかかる最小時間の検証}
 	本節では，車両全てが交差点を1回通過するのにかかる最小時間について検証を行う。交差点の使用権の取得方法は前節と同仕様の5つ鍵によって管理する。1回だけなので循環するオートマトンではなく一方通行的なオートマトンを作成する(図\ref{minT})。初期状態startから交差点進入前状態BeforeEnterへの遷移可能条件に交差点の使用権の取得として，L1==0かつL2==0かつcross==0を与える。状態BeforeEnterから交差点通過中状態crossAreaへの遷移可能条件とBeforeEnterの状態不変条件で交差点進入前7秒以上10秒未満の間で使用権を獲得しなければならないかを記述し，状態crossAreaから交差点通過後である終了状態finishへの遷移可能条件とcrossAreaの状態不変条件で交差点の通過にかかる時間を記述し，crossAreaからfinishへの状態遷移時に使用権の解除を行う。
 	
-	最小時間の検証を行う。車両1台のstartからfinishまでプロセスにかかる最小時間は7秒である。車両は全部で12台のため単純に考えると84秒で終わるかと考えられるが，同時通行可能なプロセスもあるため，もう少し少ないと考えられる。例えば図\ref{4L}のように4台同時通行もあり得る。直線が2台ずつ，左折が4台まとめて，右折が1台ずつと考えると，7台分の時間に短縮されると考え，最小時間は49秒と推測し，検証を行う。まず，49秒で本当に全過程が終わる可能性があるかどうかを次の検証式を用いて検査する。検証のために大域時間変数gcを宣言する。
+	最小時間の検証を行う。検証のために大域時間変数gcを宣言する。車両1台のstartからfinishまでプロセスにかかる最小時間は7秒である。車両は全部で12台のため単純に考えると84秒で終わるかと考えられるが，同時通行可能なプロセスもあるため，もう少し少ないと考えられる。例えば図\ref{4L}のように4台同時通行もあり得る。直線が2台ずつ，左折が4台まとめて，右折が1台ずつと考えると，7台分の時間に短縮されると考え，最小時間は49秒と推測し，検証を行う。まず，49秒で本当に全過程が終わる可能性があるかどうかを次の検証式を用いて検査する。
 	
 	\begin{verbatim}
 	
-	E<> (gc==42 and ns.finish and sn.finish and ew.finish 
+	E<> (gc==49 and ns.finish and sn.finish and ew.finish 
 	and we.finish and ne.finish and sw.finish and es.finish
 	and wn.finish and nw.finish
 	and se.finish and en.finish and ws.finish)
 	
-	A[] (gc<42 imply not (ns.finish and sn.finish 
+	A[] (gc<49 imply not (ns.finish and sn.finish 
 	and ew.finish and we.finish and ne.finish and sw.finish 
 	and es.finish and wn.finish and nw.finish and se.finish 
 	and en.finish and ws.finish))
 	\end{verbatim}
-	
+	1つ目の最小時間の可能性である上式は満たされたが，最小時間の最小性はを表す下式は，満たされなかった。すなわち，まだ小さい値を取れる。
 	その結果42秒が最小であることが求められた。以下の検証式が成り立つ。その時のルートは図\ref{veriT}の手順だった。
 	
 	
