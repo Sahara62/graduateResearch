@@ -392,31 +392,30 @@ morecomment=[l]{//}%
 	
 	\begin{verbatim}
 	
-	E<> (gc==49 and ns.finish and sn.finish and ew.finish 
-	and we.finish and ne.finish and sw.finish and es.finish
-	and wn.finish and nw.finish
-	and se.finish and en.finish and ws.finish)
+	E<> (gc==49 
+		and ns.finish and sn.finish and ew.finish and we.finish 
+		and ne.finish and sw.finish and es.finish and wn.finish 
+		and nw.finish and se.finish and en.finish and ws.finish)
 	
-	A[] (gc<49 imply not (ns.finish and sn.finish 
-	and ew.finish and we.finish and ne.finish and sw.finish 
-	and es.finish and wn.finish and nw.finish and se.finish 
-	and en.finish and ws.finish))
+	A[] (gc<49 imply 
+		not (ns.finish and sn.finish and ew.finish and we.finish 
+		and ne.finish and sw.finish and es.finish and wn.finish 
+		and nw.finish and se.finish and en.finish and ws.finish))
 	\end{verbatim}
-	1つ目の最小時間の可能性である上式は満たされたが，最小時間の最小性はを表す下式は，満たされなかった。すなわち，まだ小さい値を取れる。
-	その結果42秒が最小であることが求められた。以下の検証式が成り立つ。その時のルートは図\ref{veriT}の手順だった。
+	1つ目の最小時間の可能性である上式は満たされたが，最小時間の最小性はを表す下式は，満たされなかった。すなわち，まだ小さい値を取れる。6台分の時間で検証を引き続き行う。その結果42秒が最小であることが求められた。以下の検証式が成り立つ。その時のルートは図\ref{veriT}の手順だった。
 	
 	
 	\begin{verbatim}
 	
-	E<> (gc==42 and ns.finish and sn.finish and ew.finish 
-	and we.finish and ne.finish and sw.finish and es.finish
-	and wn.finish and nw.finish
-	and se.finish and en.finish and ws.finish)
+	E<> (gc==42 
+		and ns.finish and sn.finish and ew.finish and we.finish 
+		and ne.finish and sw.finish and es.finish and wn.finish 
+		and nw.finish and se.finish and en.finish and ws.finish)
 	
-	A[] (gc<42 imply not (ns.finish and sn.finish 
-	and ew.finish and we.finish and ne.finish and sw.finish 
-	and es.finish and wn.finish and nw.finish and se.finish 
-	and en.finish and ws.finish))
+	A[] (gc<42 imply 
+		not (ns.finish and sn.finish and ew.finish and we.finish 
+		and ne.finish and sw.finish and es.finish and wn.finish 
+		and nw.finish and se.finish and en.finish and ws.finish))
 	\end{verbatim}
 	\begin{figure}[htbp]
 	\centering

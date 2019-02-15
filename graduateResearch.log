@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  13 FEB 2019 15:37
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  15 FEB 2019 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -881,21 +881,21 @@ File: veriT.png Graphic file (type bmp)
 ] [29
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
  [30
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
  (./graduateResearch.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `graduateResearch.out' has not changed.
 (rerunfilecheck)             Checksum: A9A6BFD71C740270721701F3FBA94BBE;1999.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  ) 
 Here is how much of TeX's memory you used:
  18289 strings out of 493248
@@ -906,4 +906,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  32i,9n,49p,1033b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on graduateResearch.dvi (32 pages, 76648 bytes).
+Output written on graduateResearch.dvi (32 pages, 76708 bytes).
